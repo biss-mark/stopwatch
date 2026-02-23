@@ -21,6 +21,7 @@ body {
     text-align: center;
     border-radius: 10px;
 }
+
 h1 {
     font-size: 40px;
     padding: 6px;
@@ -28,23 +29,35 @@ h1 {
     border: 2px solid #222;
     border-radius: 10px;
 }
+
 .btns {
-    display: flex;
     background: #000;
     border: 2px solid #222;
     border-radius: 10px;
     margin-top: 15px;
     padding: 10px;
     justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .btns button {
+    flex-grow: 1;
     padding: 10px 15px;
     background: #222;
     border: 2px solid #333;
     color: #fff;
+    margin: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .btns button:active {
     background: #111;
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 30px;
+    }
 }
